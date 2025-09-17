@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test_task</title>
+    <meta
+      name="description"
+      content="Офіційна сторінка гурту «Грим та Грім». Концерти, учасники, історія та зв'язок."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header-navigation"
+        role="navigation"
+        aria-label="Головне меню"
+      >
+        <a class="header-logo" href="./index.html">G&G</a>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-link" href="#about">Про гурт</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-link" href="#concerts">Концерти</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-link" href="#gallery">Галерея</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-link" href="#contact">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">Гурт «Грим та Грім»</h1>
+        <p class="hero-text-top">
+          Справжній український рок, який гуркоже в серці.
+        </p>
+        <p class="hero-text-midle">
+          «Грим та Грім» - це поєднання
+          <span class="hero-span">потужних</span> гітарних рифів, чесних текстів
+          і вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук,
+          свободу та силу музики.
+        </p>
+        <p class="hero-text-bottom">
+          <span class="hero-span">Наші концерти</span> - це завжди контаки зі
+          залом, драйв та емоції. Приєднуйся до нас на найближчих виступах і
+          відчуй цей саунд наживо!
+        </p>
+        <button class="hero-btn" data-popup="ticket">Замовити квиток</button>
+      </section>
+
+      <section id="concerts" class="concerts">
+        <div class="concerts-wrapper">
+          <h2 class="concert-title">Найближчі концерти</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Місто / Заклад</th>
+                <th>К-сть місць</th>
+                <th>Дата і час</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Київ — Docker-G Pub</td>
+                <td>250</td>
+                <td>25.10.2025, 19:00</td>
+                <td>
+                  <button class="btn-secondary" data-popup="ticket">
+                    Замовити квиток
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Львів — FESTrepublic</td>
+                <td>400</td>
+                <td>01.11.2025, 20:00</td>
+                <td>
+                  <button class="btn-secondary" data-popup="ticket">
+                    Замовити квиток
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Одеса — Зелений театр</td>
+                <td>700</td>
+                <td>09.11.2025, 19:30</td>
+                <td>
+                  <button class="btn-secondary" data-popup="ticket">
+                    Замовити квиток
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Харків — ArtZavod</td>
+                <td>500</td>
+                <td>16.11.2025, 19:00</td>
+                <td>
+                  <button class="btn-secondary" data-popup="ticket">
+                    Замовити квиток
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <h2 class="gallery-title">Учасники гурту</h2>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img
+              class="photo"
+              srcset="
+                ./images/gallery-gitar-1x.png 1x,
+                ./images/gallery-gitar-2x.png 2x
+              "
+              src="./images/gallery-gitar-1x.png"
+              alt="guitarist"
+              width="298"
+              height="218"
+            />
+            <h3 class="gallery-item-title">Максим - гітара</h3>
+          </li>
+          <li class="gallery-item">
+            <img
+              class="photo"
+              srcset="
+                ./images/gallery-vokal-1x.png 1x,
+                ./images/gallery-vokal-2x.png 2x
+              "
+              src="./images/gallery-vokal-1x.png"
+              alt="vocalist"
+              width="298"
+              height="218"
+            />
+            <h3 class="gallery-item-title">Олена - вокал</h3>
+          </li>
+          <li class="gallery-item">
+            <img
+              class="photo"
+              srcset="
+                ./images/gallery-drum-1x.png 1x,
+                ./images/gallery-drum-2x.png 2x
+              "
+              src="./images/gallery-drum-1x.png"
+              alt="drummer"
+              width="298"
+              height="218"
+            />
+            <h3 class="gallery-item-title">Тарас - барабани</h3>
+          </li>
+        </ul>
+      </section>
+      <section id="about" class="about">
+        <div class="about-container">
+          <h2 class="about-title">Наша історія</h2>
+          <div class="about-content">
+            <div>
+              <p class="about-text">
+                «Грим та Грім» народився з бажання створювати музику, яка
+                відчувається серцем. Ми почали свій шлях у маленькій студії в
+                центрі Києва, де кожен акорд, кожне слово було наповнене
+                емоціями та переживаннями. Це було місце, де народжувались наші
+                перші пісні, де ми вчились грати разом як єдиний організм.
+              </p>
+              <p class="about-text">
+                За роки нашої діяльності ми виступили на десятках сцен, від
+                невеликих клубів до великих фестивалів. Наша музика — це
+                поєднання традиційного року з сучасними елементами, що робить її
+                унікальною та впізнаваною. Ми не боїмось експериментувати з
+                звуком, додаючи електронні елементи або народні інструменти.
+              </p>
+            </div>
+            <img
+              class="photo"
+              srcset="./images/about-us-1x.png 1x, ./images/about-us-2x.png 2x"
+              src="./images/about-us-1x.png"
+              alt="drummer"
+              width="452"
+              height="199"
+            />
+          </div>
+          <p class="about-text-buttom">
+            Кожен наш виступ - це не просто концерт, а справжня подія, де ми
+            ділимося своєю енергією з глядачами та створюємо неповторну
+            атмосферу. Ми віримо, що музика має силу об'єднувати людей,
+            створювати спільноти та надихати на зміни.
+          </p>
+          <p class="about-text-buttom">
+            Наш колектив складається з досвідчених музикантів, кожен з яких
+            привносить свій унікальний стиль та бачення. Максим створює
+            неймовірні гітарні рифи, Олена зачаровує своїм вокалом, а Тарас
+            тримає ритм, який змушує серця битися в унісон з музикою.
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact-title">Зв'яжися з нами</h2>
+        <p class="contact-text">
+          Хочеш заказати виступ або маєш питання? Пиши!
+        </p>
+        <div class="block">
+          <form class="contact-form">
+            <label class="form-label">
+              Ім'я
+              <input type="name" name="email" autofocus class="input" />
+            </label>
+            <label class="form-label">
+              Email
+              <input type="email" name="email" autofocus class="input" />
+            </label>
+            <label class="form-label">
+              Повідомлення
+              <textarea name="message" rows="8" class="textarea">
+Розкажи про свої ідеї...</textarea
+              >
+            </label>
+            <button type="submit" class="btn">Відправити</button>
+          </form>
+          <div class="right-column">
+            <h3 class="right-column-title">Наше місце знаходження</h3>
+            <img
+              class="photo"
+              srcset="./images/map-1x.png 1x, ./images/map-2x.png 2x"
+              src="./images/map-1x.png"
+              alt="map"
+              width="524"
+              height="298"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top-block">
+        <p class="footer-text">©2025 <<Грим та Грім». Всі права захищені.</p>
+        <ul class="footer-list">
+          <li>Instagram</li>
+          <li>YouTube</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <ul class="footer-list-bottom">
+        <li>booking@lotoplay</li>
+        <li>+38 (099) 123-45-67</li>
+      </ul>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
