@@ -85,25 +85,29 @@ body {
   line-height: 100%;
   letter-spacing: -0.02em;
   line-height: normal;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .hero-text-top {
   font-size: 18px;
   line-height: 1.8;
-  letter-spacing: 0.02em;
-  margin-bottom: 42px;
+  letter-spacing: 0.065em;
+  margin-bottom: 40px;
 }
 
 .hero-text-midle {
   max-width: 1170px;
   font-size: 14.5px;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.065em;
+  margin-bottom: 25px;
 }
 
 .hero-text-bottom {
   font-size: 14.5px;
-  margin-bottom: 42px;
+  line-height: 1.8;
+  letter-spacing: 0.065em;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
@@ -186,6 +190,8 @@ body {
   display: inline-block;
   font-weight: 700;
   font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
   width: 145px;
   height: 39px;
   border-radius: 10px;
@@ -236,7 +242,7 @@ body {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/*--------------ABOUT-US-------------------*/
+/*--------------ABOUT-------------------*/
 .about {
   padding: 75px 0;
   display: flex;
@@ -267,7 +273,7 @@ body {
 .about-text {
   font-size: 15px;
   line-height: 1.8;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
@@ -275,7 +281,7 @@ body {
   max-width: 1170px;
   font-size: 15px;
   line-height: 1.8;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   margin-top: 30px;
 }
 /*-----------------CONTACT--------------*/
@@ -311,6 +317,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin-right: 40px;
 }
 
 .form-label {
@@ -389,7 +396,7 @@ input:valid {
   padding: 25px 20px;
   background-color: #151821;
   border-radius: 10px;
-  border: #333;
+  border: 1px solid #333;
   width: 560px;
 }
 
@@ -401,6 +408,19 @@ input:valid {
   margin-bottom: 20px;
 }
 
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  max-width: 520px;
+  height: 300px;
+  border-radius: 10px;
+}
 /*------------------FOOTER---------------*/
 .footer {
   height: 177px;
