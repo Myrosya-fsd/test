@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test_task</title>
     <meta
@@ -64,7 +65,7 @@
           залом, драйв та емоції. Приєднуйся до нас на найближчих виступах і
           відчуй цей саунд наживо!
         </p>
-        <button class="hero-btn" data-popup="ticket">Замовити квиток</button>
+        <a class="hero-btn" href="#concerts">Замовити квиток</a>
       </section>
 
       <section id="concerts" class="concerts">
@@ -85,9 +86,7 @@
                 <td>250</td>
                 <td>25.10.2025, 19:00</td>
                 <td>
-                  <button class="btn-secondary" data-popup="ticket">
-                    Замовити квиток
-                  </button>
+                  <a class="btn-secondary" href="#contact"> Замовити квиток </a>
                 </td>
               </tr>
               <tr>
@@ -95,9 +94,7 @@
                 <td>400</td>
                 <td>01.11.2025, 20:00</td>
                 <td>
-                  <button class="btn-secondary" data-popup="ticket">
-                    Замовити квиток
-                  </button>
+                  <a class="btn-secondary" href="#contact"> Замовити квиток </a>
                 </td>
               </tr>
               <tr>
@@ -105,9 +102,7 @@
                 <td>700</td>
                 <td>09.11.2025, 19:30</td>
                 <td>
-                  <button class="btn-secondary" data-popup="ticket">
-                    Замовити квиток
-                  </button>
+                  <a class="btn-secondary" href="#contact"> Замовити квиток </a>
                 </td>
               </tr>
               <tr>
@@ -115,9 +110,7 @@
                 <td>500</td>
                 <td>16.11.2025, 19:00</td>
                 <td>
-                  <button class="btn-secondary" data-popup="ticket">
-                    Замовити квиток
-                  </button>
+                  <a class="btn-secondary" href="#contact"> Замовити квиток </a>
                 </td>
               </tr>
             </tbody>
@@ -223,19 +216,30 @@
           <form class="contact-form">
             <label class="form-label">
               Ім'я
-              <input type="name" name="email" autofocus class="input" />
+              <input autofocus class="input" type="text" name="name" required />
             </label>
             <label class="form-label">
               Email
-              <input type="email" name="email" autofocus class="input" />
+              <input
+                type="email"
+                name="email"
+                autofocus
+                class="input"
+                required
+              />
             </label>
             <label class="form-label">
               Повідомлення
-              <textarea name="message" rows="8" class="textarea">
-Розкажи про свої ідеї...</textarea
-              >
+              <textarea
+                name="message"
+                rows="8"
+                class="textarea"
+                placeholder="Розкажи про свої ідеї..."
+              ></textarea>
             </label>
-            <button type="submit" class="btn">Відправити</button>
+            <button type="submit" class="btn" id="open-popup">
+              Відправити
+            </button>
           </form>
           <div class="right-column">
             <h3 class="right-column-title">Наше місце знаходження</h3>
@@ -253,16 +257,48 @@
     </main>
     <footer class="footer">
       <div class="footer-top-block">
-        <p class="footer-text">©2025 <<Грим та Грім». Всі права захищені.</p>
+        <p class="footer-text">©2025 «Грим та Грім». Всі права захищені.</p>
         <ul class="footer-list">
-          <li>Instagram</li>
-          <li>YouTube</li>
-          <li>Facebook</li>
+          <li>
+            <a
+              class="soc-link"
+              target="_blank"
+              href="https://www.instagram.com"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="soc-link"
+              target="_blank"
+              href="https://www.youtube.com"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+          </li>
+          <li>
+            <a
+              class="soc-link"
+              target="_blank"
+              href="https://www.facebook.com"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
         </ul>
       </div>
       <ul class="footer-list-bottom">
-        <li>booking@lotoplay</li>
-        <li>+38 (099) 123-45-67</li>
+        <li>
+          <a class="contacts-link" href="mailto:booking@lotoplay.com">
+            booking@lotoplay</a
+          >
+        </li>
+        <li>
+          <a class="contacts-link" href="tel:+380991234567">
+            +38 (099) 123-45-67</a
+          >
+        </li>
       </ul>
     </footer>
     <script type="module" src="./main.js"></script>
